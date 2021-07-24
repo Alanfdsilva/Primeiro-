@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" name="text/css" href="./assets/style.css">
+    <title>Alan F. | Formulário</title>
+</head>
+<body>
+    <div class="form_header"></div>
+    <form>
+    <div class="container">
+        <div class="column__name">
+            <div class="column__name--data">
+                <label for="name">
+                    <p>Nome Completo:</p>
+                    <input type="text" name="name" required minlength="2" placeholder="Nome Completo">
+                </label>
+                <label for="RG">
+                    <p>RG:</p>
+                    <input type="number" name="RG" required placeholder="00.000.000-0">
+                </label>
+                <label for="Nome-do-pai">
+                    <p>Pai:</p>
+                    <input type="text" name="Nome-do-pai" placeholder="Nome do Pai">
+                </label>
+                <label for="Escolaridade">
+                    <p>Escolaridade:</p>
+                    <select name="Escolaridade" id="Escolaridade">
+                        <option value="">Selecione</option>
+                        <option value="">Ensino Fundamental I</option>
+                        <option value="">Ensino Fundamental II</option>
+                        <option value="">Ensino Médio</option>
+                        <option value="">Ensino Superior</option>
+                    </select>
+                </label>
+                <label for="telefone">
+                    <p>Telefone:</p>
+                    <input type="number" name="telefone" placeholder="0000-0000">
+                </label>
+                <label for="email">
+                    <p>E-mail:</p>
+                    <input type="email" name="email" required minlength="2" placeholder="Exemplo@gmail.com">
+                </label>
+            </div>
+        </div>
+        <div class="column__date">
+            <div class="column__date--data">
+                <label for="data-de-nascimento">
+                    <p>Data de Nascimento:</p>
+                    <input type="date" min="1801-01-01" max="2022-01-01">
+                </label>
+                <label for="CPF">
+                    <p>CPF:</p>
+                    <input type="number" placeholder="000.000.000-0">
+                </label>
+                <label for="nome-da-mae">
+                    <p>Mãe:</p>
+                    <input type="text" name="nome-da-mae" placeholder="Nome da Mãe">
+                </label>
+                <label for="profissao">
+                    <p>Profissão:</p>
+                    <input type="text" name="profissao" placeholder="profissao">
+                </label>
+                <label for="celular">
+                    <p>Celular:</p>
+                    <input type="number" name="celular" placeholder="(00) 0 0000-0000">
+                </label>
+            </div>
+        </div>
+    </div>
+        <div class="envio">
+            <div class="cadastrar">
+                    <input type="submit" name="Cadastrar" value="Cadastrar">
+            </div>
+            <div class="limpar">
+                    <input type="reset" name="Limpar" value="Limpar Cadastro">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
